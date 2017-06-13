@@ -9,7 +9,7 @@ To start, it is out-of-core in the sense that it does not need to read an entire
 
 Next, we move on to the actual machinery to see how we can estimate an intricate model while only using minimal memory. It achieves this by using the so-called hash trick. Essentially, the hash trick takes every pair of column and value and converts it to its hash value. Then, these hashes are all converted into a sparse array through one-hot encoding.  Thus, we can run a "large" regression with hundreds of thousands of explanatory variables, each corresponding to one particular pair. Computation is efficient however, because the feature vectors are sparse with most entries equal to zero. It is clear then why FTRL-P is used, as it ensures the sparseness of the model update. The updating occurs by applying this method to small batches of data at a time, where we have set batch size to one.
 
-This script is customized to be able to perform a wide variety of tasks from regression to classification. In the case of multinomial classification, a One-Against-All model is trained which means that we create a separate prediction for each label. As a result, multilabel classification is also supported. 
+This script is customized to be able to perform a wide variety of tasks from regression to classification. In the case of multinomial classification, a One-Against-All model is trained which outputs a separate prediction for each label. As a result, multilabel classification is also supported. 
 
 ## Example 1: Otto
 
