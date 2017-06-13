@@ -16,7 +16,7 @@ It is recommended that yrtgu is used with [PyPy](https://pypy.org/) as this lean
 ## Example 1: Otto Group Product Classification Challenge
 We provide here a quick application to the [Otto classification competition](https://www.kaggle.com/c/otto-group-product-classification-challenge). 
 
-Directions: Download `yrtgu.py`, `train-OH.csv` and run `yrtgu-otto.py`.
+Directions: Download `yrtgu.py`, `trainOH.csv` and run `yrtgu-otto.py`.
 
 With PyPy, this should only take a few seconds. This single model scores a 0.70950 on the private leaderboard putting it in 2617th place putting it in the bottom 25 percentile. While this may seem dismal at first, note that this is a relatively small data set (only 12MB) so there is not enough data to overcome the sparse nature of the algorithm. Thus, it is included simply as a demonstration. Note further that this example is run with only one epoch, and increasing this number steadily improves the model. 
 
