@@ -24,7 +24,7 @@ With PyPy, this should only take a few seconds. This single model scores a 0.709
 ## Example 2: Azavu
 The [Azavu Click-Through Rate Prediction](https://www.kaggle.com/c/avazu-ctr-prediction) competition provides a better setting for showcasing the true capabilities of yrtgu as it is a similar setting as used by Google with great success. 
 
-Directions: Download 'yrtgu.py', training and test data from [here](https://www.kaggle.com/c/avazu-ctr-prediction/data), and `yrtgu-avazu.py`. Note that the training data is nearly a whopping 6GB when uncompressed! While it is certainly possible to read this into memory, model processing and usage will overall be slower. This is where out-of-core techniques really shine.
+Directions: Download `yrtgu.py`, training and test data from [here](https://www.kaggle.com/c/avazu-ctr-prediction/data), and `yrtgu-avazu.py`. Note that the training data is nearly a whopping 6GB when uncompressed! While it is certainly possible to read this into memory, model processing and usage will overall be slower. This is where out-of-core techniques really shine.
 
 With PyPy, the runtime is about 10 minutes as opposed to roughly two hours with a standard python implementation. This achieves a private leaderboard score of 0.3936633 attaining 633rd place and top 41 percentile! Not bad especially considering it is a single model with no parameter tuning and only a single pass epoch. 
 
